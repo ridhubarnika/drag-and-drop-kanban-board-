@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kanban Board</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="app-header">
+    <div class="header-left">
+      <span class="logo">⬛ KanFlow</span>
+    </div>
+    <div class="header-center">
+      <input
+        type="text"
+        id="search-input"
+        class="search-bar"
+        placeholder="Search cards…"
+        aria-label="Search cards"
+      />
+    </div>
+    <div class="header-right">
+      <div class="filter-buttons" role="group" aria-label="Filter by priority">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn p1" data-filter="P1">P1</button>
+        <button class="filter-btn p2" data-filter="P2">P2</button>
+        <button class="filter-btn p3" data-filter="P3">P3</button>
+        <button class="filter-btn p4" data-filter="P4">P4</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="board" id="board" role="main">
+    <!-- Columns rendered by JS -->
+  </main>
+
+  <script src="board.js"></script>
+</body>
+</html>
